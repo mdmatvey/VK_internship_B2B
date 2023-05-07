@@ -1,0 +1,1 @@
+# VK_internship_B2B
