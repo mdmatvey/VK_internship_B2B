@@ -1,0 +1,24 @@
+button[type="submit"],
+button[type="button"] {
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button {
+  color: #1c1c1c;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c3a029;
+}

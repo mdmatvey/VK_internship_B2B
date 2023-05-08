@@ -1,0 +1,11 @@
+button[type="submit"] {
+    background-color: #34c762;
+}
+
+button[type="submit"]:hover {
+    background-color: #2aa350;
+}
+
+button[type="submit"]:active {
+    background-color: #1f783b;
+}
