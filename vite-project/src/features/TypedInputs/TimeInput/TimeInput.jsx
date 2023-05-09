@@ -8,6 +8,7 @@ const TimeInput = ({ inputValue, inputAction }) => {
             inputLabel={'Время'} 
             inputType={'time'}
             inputValue={inputValue}
+            inputPlaceholder={'время'}
             inputOnChange={inputAction}
             storeField={'Time'}
         />

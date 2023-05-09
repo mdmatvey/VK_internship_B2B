@@ -15,6 +15,12 @@ label {
     gap: 0.5rem;
 }
 
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-min-logical-height: 25px
+}
+
 textarea {
   max-width: 100%;
   resize: none;
@@ -39,6 +45,13 @@ svg {
 input[type="date"]::-webkit-calendar-picker-indicator,
 input[type="time"]::-webkit-calendar-picker-indicator {
   filter: invert(0.8);
+}
+
+input[type='date']:empty:after,
+input[type='time']:empty:after {
+  color: #aaa;
+  content: none;
+  -webkit-content: attr(placeholder);
 }
 
 @media screen and (max-width: 578px) {

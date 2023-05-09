@@ -8,6 +8,7 @@ const DateInput = ({ inputValue, inputAction }) => {
             inputLabel={'Дата'} 
             inputType={'date'}
             inputValue={inputValue}
+            inputPlaceholder={'дату'}
             inputOnChange={inputAction}
             storeField={'Date'}
         />
