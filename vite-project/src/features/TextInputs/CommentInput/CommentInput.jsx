@@ -6,6 +6,7 @@ const CommentInput = ({ inputValue, inputAction }) => {
     return (  
         <TextInput
             inputLabel={'Комментарий'} 
+            inputRequired={false}
             inputValue={inputValue}
             inputPlaceholder={'Введите комментарий (необязательно)'}
             inputOnChange={inputAction}

@@ -17,9 +17,18 @@
     z-index: 1;
 }
 
-.buttons-wrapper {
+.bottom-wrapper {
     display: flex;
     width: 100%;
-    gap: 15px;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#submit-message {
+    transition: .2s;
+}
+
+.buttons-wrapper {
+    display: flex;
+    gap: 10px
 }

@@ -1,17 +1,18 @@
 import PropTypes from 'prop-types';
 import '../styles/styles.css'
 
-const TypedInput = ({inputLabel, inputType, inputValue, inputPlaceholder, inputOnChange, storeField}) => {
+const TypedInput = ({inputLabel, inputRequired, inputType, inputValue, inputPlaceholder, inputOnChange, storeField}) => {
     return (  
         <label>
-            {inputLabel}
-            <input type={inputType} value={inputValue} placeholder={`Введите ${inputPlaceholder}`} onChange={(e) => inputOnChange(e.target.value, storeField)} required />
+            {inputLabel}{inputRequired && '*' }:
+            <input type={inputType} value={inputValue} placeholder={`Введите ${inputPlaceholder}`} onChange={(e) => inputOnChange(e.target.value, storeField)} required={inputRequired} />
         </label>
     );
 }
 
 TypedInput.propTypes = {
     inputLabel: PropTypes.string,
+    inputRequired: PropTypes.bool,
     inputType: PropTypes.string,
     inputValue: PropTypes.string, 
     inputPlaceholder: PropTypes.string,

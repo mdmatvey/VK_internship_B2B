@@ -8,6 +8,7 @@ const FloorSelection = ({ inputValue, inputAction }) => {
     return (  
         <SelectInput
             inputLabel={'Этаж'}
+            inputRequired={true}
             inputValue={inputValue}
             inputOnChange={inputAction}
             storeField={'Floor'}

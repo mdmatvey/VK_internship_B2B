@@ -8,6 +8,7 @@ const IntercomSelection = ({ inputValue, inputAction }) => {
     return (  
         <SelectInput
             inputLabel={'Переговорная'}
+            inputRequired={true}
             inputValue={inputValue}
             inputOnChange={inputAction}
             storeField={'Intercom'}

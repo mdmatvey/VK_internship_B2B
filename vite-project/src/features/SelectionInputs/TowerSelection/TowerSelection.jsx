@@ -8,6 +8,7 @@ const TowerSelection = ({ inputValue, inputAction }) => {
     return (  
         <SelectInput
             inputLabel={'Башня'}
+            inputRequired={true}
             inputValue={inputValue}
             inputOnChange={inputAction}
             storeField={'Tower'}

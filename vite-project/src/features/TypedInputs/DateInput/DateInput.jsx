@@ -6,6 +6,7 @@ const DateInput = ({ inputValue, inputAction }) => {
     return (  
         <TypedInput 
             inputLabel={'Дата'} 
+            inputRequired={true}
             inputType={'date'}
             inputValue={inputValue}
             inputPlaceholder={'дату'}

@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import '../styles/styles.css'
 
-const SelectInput = ({inputLabel, inputValue, inputOnChange, storeField, inputOptions}) => {
+const SelectInput = ({inputLabel, inputRequired, inputValue, inputOnChange, storeField, inputOptions}) => {
     return (  
         <label>
-            {inputLabel}:
-            <select value={inputValue} onChange={(e) => inputOnChange(e.target.value, storeField)} required>
+            {inputLabel}{inputRequired && '*' }:
+            <select value={inputValue} onChange={(e) => inputOnChange(e.target.value, storeField)} required={inputRequired}>
                 {
                     inputOptions.map((option, index) => 
                         <option value={option} key={index}>{option}</option>
@@ -18,6 +18,7 @@ const SelectInput = ({inputLabel, inputValue, inputOnChange, storeField, inputOp
 
 SelectInput.propTypes = {
     inputLabel: PropTypes.string,
+    inputRequired: PropTypes.bool,
     inputValue: PropTypes.string, 
     inputOnChange: PropTypes.func, 
     storeField: PropTypes.string,
