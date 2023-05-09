@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import '../styles/styles.css'
 
-const TextInput = ({inputLabel, inputValue, inputOnChange, storeField}) => {
+const TextInput = ({inputLabel, inputValue, inputPlaceholder, inputOnChange, storeField}) => {
     return (  
         <label>
             {inputLabel}:
-            <textarea value={inputValue} onChange={(e) => inputOnChange(e.target.value, storeField)} />
+            <textarea value={inputValue} placeholder={inputPlaceholder} onChange={(e) => inputOnChange(e.target.value, storeField)} />
         </label>
     );
 }
@@ -13,6 +13,7 @@ const TextInput = ({inputLabel, inputValue, inputOnChange, storeField}) => {
 TextInput.propTypes = {
     inputLabel: PropTypes.string,
     inputValue: PropTypes.string, 
+    inputPlaceholder: PropTypes.string,
     inputOnChange: PropTypes.func,
     storeField: PropTypes.string 
 };
