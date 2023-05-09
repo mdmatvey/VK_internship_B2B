@@ -2,13 +2,10 @@ html {
   background-color: #383838 !important;
 }
 
-#root {
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  font-family: 'Comic Sans MS', sans-serif;
 }
 
-body {
-  height: 100%;
-  font-family: 'Comic Sans MS', sans-serif;
+html, body, #root { 
+  height: 100%; 
 }
